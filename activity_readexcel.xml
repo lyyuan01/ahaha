@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_tv_wrap"
+            android:text="xls path: " />
+
+        <TextView
+            android:id="@+id/btn_xls_path"
+            style="@style/style_tv_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/style_tv_wrap"
+            android:text="xml path: " />
+
+        <TextView
+            android:id="@+id/btn_xml_path"
+            style="@style/style_tv_content" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/style_tv_wrap"
+        android:layout_marginTop="15dp"
+        android:text="数据开始的坐标，表号、行、列(从0开始)，行列和语言二选一：" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            style="@style/style_tv_title"
+            android:text="sheet index、行、列: " />
+
+        <EditText
+            android:id="@+id/btn_sheet_index"
+            style="@style/style_et"
+            android:hint="表"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/btn_row_data"
+            style="@style/style_et"
+            android:hint="行"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/btn_col_data"
+            style="@style/style_et"
+            android:hint="列"
+            android:inputType="number"/>
+
+        <TextView
+            style="@style/style_tv_wrap"
+            android:text="          语言: "
+            android:gravity="center_vertical|right"/>
+
+        <EditText
+            android:id="@+id/btn_key_language"
+            style="@style/style_et"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            style="@style/style_tv_title"
+            android:text="string_name index: " />
+
+        <EditText
+            android:id="@+id/btn_col_stringname"
+            style="@style/style_et"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:text="btn1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:text="开始" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:text="btn3" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:text="btn4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示：\n  若strings.xml存在，则按照其中的string name排序；\n  若不存在，输出的strings.xml则按照xls中的排序;"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
